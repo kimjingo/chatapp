@@ -61,3 +61,17 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+laravel new chatapp
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvidor"
+composer require laravel/jetstream
+php artisan jetstream:install inertia
+npm install && npm run dev
+php artisan vendor:publish --tag=jetstream-views
+php artisam make:model ChatRoom -m
+php artisam make:model ChatMessage -m
+php artisam migrate
+php artisan make:seeder ChatRoomSeeder
+php artisan db:seed# chatapp
